@@ -1,6 +1,6 @@
 This tool help you to find Science and Maths Formula.
 
-THis tool is made in python3.9.
+This tool is made in python3.9.
 
 <b>How To Install </b>
 
