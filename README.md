@@ -6,5 +6,6 @@ This tool is made in python3.9.
 
 	git clone https://github.com/mgmehra2005/Fomula-Finder.git
 	cd Formula-Finder
+	python main.py
 
 
