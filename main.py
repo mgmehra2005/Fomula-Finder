@@ -24,8 +24,8 @@ while(True):
         print(mt("Maths"))
         
     elif take == 0:
-        exit()
+        exit("Good Bye!")
 
     elif take == "exit":
-        exit()
+        exit("Good Bye!")
 
