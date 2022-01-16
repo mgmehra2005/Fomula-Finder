@@ -1,6 +1,8 @@
 from dic import Science
 from dic import Maths
 from dic import descpt
+from dic import chemistry
+from dic import descpt_chem
 
 def mt(a):
      """This Function Will connect u to Maths Dictonery"""
@@ -72,3 +74,41 @@ def sci(a):
     end = "\nMain Menu"
     return end
      
+
+def chem(a):
+    """This Function Will connect u to chemistry Dictonery"""
+    while(True):
+        print(f"\nSubject : {a}")
+        take2 = input("\n\tName of Formula : ")
+        
+        if take2 not in descpt_chem and take2 in chemistry:
+            print(f"\n\tFormula of {take2} : {chemistry[take2]}")
+            print("\n\tNo Description Available.")
+        
+        elif take2 not in chemistry and take2 in Maths:
+            print("\nThis Formula is in Maths Column.")
+           
+        elif take2 not in chemistry and take2 in Science:
+            print("\nThis Formula is in Science Column.")
+            
+        elif take2 in chemistry and descpt_chem:
+            print(f"\n\tFormula of {take2} : {chemistry[take2]}")
+            print(descpt_chem[take2])
+
+        elif take2 == "exit":
+            exit()
+
+        else:
+           print("\nFormula Not Found.")
+           print("\n\t* Check the first letter of Formula is Capital or not.")
+           print("\n\t* Recheck the spelling of Formula.")
+           continue
+        dec = input("\nPress (y) to continue or (n) to exit. : ")
+        if dec == "n":
+            break
+
+        elif dec == "Y" or "y":
+           continue
+
+    end = "\nMain Menu"
+    return end
